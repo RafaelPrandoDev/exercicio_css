@@ -1,0 +1,143 @@
+/* o asterisco define estilo para todos que não tem estilo definido */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body >header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline; /* Para exibir todos na mesma linha */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px; /* edita a largura */
+    margin: 0 auto; /* centraliza os elementos */
+}
+
+.articles{
+    display: flex; /* organiza o layout da página */
+    flex-wrap: wrap; /* quebra a linha quando acabar o espaço */
+    justify-content: space-between; /* distribui igualmente o espaço vazio */
+}
+
+.articles article img{
+    /*height: 180px*/
+    width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, /* A vírgula pode ser usada para aproveitar o mesmo código em outra tag também*/
+.articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.articles article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; /* Tira o underline dos links */
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a{
+    background-color: #009432;
+}
+
+#economy{
+    background-color: #fffcb0;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#games{
+    background-color: rgb(177, 185, 255);
+}
+
+#games .articles article a{
+    background-color: rgb(76, 84, 189);
+}
+
+#tecnology{
+    background-color: rgb(125, 241, 245);
+}
+
+#tecnology .articles article a{
+    background-color: rgb(69, 151, 151);
+}
+
+.articles article > header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* o # serve para definir o estilo pelo ID colocado no HTML */
+/* #economy h2{
+/*    color:gold;
+/*}
+
+/* o ponto serve para definir o estilo de acordo com a classe */
+/*.creation-date{
+/*    color:lightgray
+/*}
+
